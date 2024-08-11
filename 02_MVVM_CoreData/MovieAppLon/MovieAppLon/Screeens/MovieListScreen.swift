@@ -8,45 +8,58 @@
 import SwiftUI
 
 struct MovieListScreen: View {
-    
+    @StateObject private var movieListVM = MovieListViewModel()
     @State private var isPresented: Bool = false
-    
+    private func deleteMovie(at indexSet: IndexSet) {
+            indexSet.forEach { index in
+                let movie = movieListVM.movies[index]
+                // delete the movie
+                movieListVM.deleteMovie(movie: movie)
+                // get all movies
+                movieListVM.getAllMovies()
+            }
+        }
+
     var body: some View {
         List {
             
-            Text("Movies")
-            
+            ForEach(movieListVM.movies, id: \.id) { movie in
+                MovieCell(movie: movie)
+            }.onDelete(perform: deleteMovie)
         }.listStyle(PlainListStyle())
-        .navigationTitle("Movies")
-        .navigationBarItems(trailing: Button("Add Movie") {
-            isPresented = true
-        })
-        .sheet(isPresented: $isPresented, onDismiss: {
-            
-        },  content: {
-            AddMovieScreen()
-        })
-        .embedInNavigationView()
+            .navigationTitle("Movies")
+            .navigationBarItems(trailing: Button("Add Movie") {
+                isPresented = true
+            })
+            .sheet(isPresented: $isPresented, onDismiss: {
+                movieListVM.getAllMovies()
+            },  content: {
+                AddMovieScreen()
+            })
+            .embedInNavigationView()
         
-        .onAppear(perform: {
-            
-        })
+            .onAppear(perform: {
+                movieListVM.getAllMovies()
+            })
     }
 }
 
 struct MovieCell: View {
+    
+    let movie: MovieViewModel
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 5) {
-                Text("movie.title")
+                Text(movie.title)
                     .fontWeight(.bold)
-                Text("movie.director")
+                Text(movie.director)
                     .font(.caption2)
-                Text("movie.releaseDate ?? ")
+                Text(movie.releaseDate ?? "")
                     .font(.caption)
             }
             Spacer()
-            RatingView(rating: .constant(2))
+            RatingView(rating: .constant(movie.rating))
         }
     }
 }
