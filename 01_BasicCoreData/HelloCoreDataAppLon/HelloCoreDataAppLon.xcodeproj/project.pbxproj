@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269D598B2C68259B00F78A54 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D598A2C68259B00F78A54 /* CoreDataManager.swift */; };
+		269D598E2C6825DA00F78A54 /* AppDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 269D598C2C6825DA00F78A54 /* AppDataBase.xcdatamodeld */; };
+		269D59922C6833EC00F78A54 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D59912C6833EC00F78A54 /* MovieDetailView.swift */; };
 		9A9311512C67BB5F00552676 /* HelloCoreDataAppLonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9311502C67BB5F00552676 /* HelloCoreDataAppLonApp.swift */; };
 		9A9311532C67BB5F00552676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9311522C67BB5F00552676 /* ContentView.swift */; };
 		9A9311552C67BB6000552676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9311542C67BB6000552676 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269D598A2C68259B00F78A54 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		269D598D2C6825DA00F78A54 /* AppDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppDataBase.xcdatamodel; sourceTree = "<group>"; };
+		269D59912C6833EC00F78A54 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		9A93114D2C67BB5F00552676 /* HelloCoreDataAppLon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreDataAppLon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9311502C67BB5F00552676 /* HelloCoreDataAppLonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataAppLonApp.swift; sourceTree = "<group>"; };
 		9A9311522C67BB5F00552676 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269D59892C68257700F78A54 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				269D598A2C68259B00F78A54 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		269D59902C68338600F78A54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				269D59912C6833EC00F78A54 /* MovieDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9A9311442C67BB5E00552676 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +73,12 @@
 		9A93114F2C67BB5F00552676 /* HelloCoreDataAppLon */ = {
 			isa = PBXGroup;
 			children = (
+				269D59902C68338600F78A54 /* Views */,
+				269D59892C68257700F78A54 /* Managers */,
 				9A93115E2C67BCE400552676 /* AppSystemViews */,
 				9A9311542C67BB6000552676 /* Assets.xcassets */,
 				9A9311562C67BB6000552676 /* Preview Content */,
+				269D598C2C6825DA00F78A54 /* AppDataBase.xcdatamodeld */,
 			);
 			path = HelloCoreDataAppLon;
 			sourceTree = "<group>";
@@ -145,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269D59922C6833EC00F78A54 /* MovieDetailView.swift in Sources */,
+				269D598B2C68259B00F78A54 /* CoreDataManager.swift in Sources */,
 				9A9311532C67BB5F00552676 /* ContentView.swift in Sources */,
+				269D598E2C6825DA00F78A54 /* AppDataBase.xcdatamodeld in Sources */,
 				9A9311512C67BB5F00552676 /* HelloCoreDataAppLonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreDataAppLon/Preview Content\"";
@@ -297,6 +326,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.HelloCoreDataAppLon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreDataAppLon/Preview Content\"";
@@ -328,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.HelloCoreDataAppLon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +388,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		269D598C2C6825DA00F78A54 /* AppDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				269D598D2C6825DA00F78A54 /* AppDataBase.xcdatamodel */,
+			);
+			currentVersion = 269D598D2C6825DA00F78A54 /* AppDataBase.xcdatamodel */;
+			name = AppDataBase.xcdatamodeld;
+			path = /Users/macbookair2018/Examples/SwiftUI/swiftui_coredata_ma/01_BasicCoreData/HelloCoreDataAppLon/HelloCoreDataAppLon/AppDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A9311452C67BB5E00552676 /* Project object */;
 }
