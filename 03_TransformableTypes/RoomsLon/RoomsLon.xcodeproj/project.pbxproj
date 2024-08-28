@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26AD4ADA2C7E9EEE00B5375C /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AD82C7E9EEE00B5375C /* MovieAppModel.xcdatamodeld */; };
-		9AB120D42C691FCD00253D78 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB120D32C691FCD00253D78 /* AddMovieViewModel.swift */; };
-		9AB120D62C69278700253D78 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB120D52C69278700253D78 /* MovieListViewModel.swift */; };
-		D0D8D1A62C685C4900DA534E /* MovieAppLonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1A52C685C4900DA534E /* MovieAppLonApp.swift */; };
-		D0D8D1A82C685C4900DA534E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1A72C685C4900DA534E /* ContentView.swift */; };
-		D0D8D1AA2C685C4D00DA534E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8D1A92C685C4D00DA534E /* Assets.xcassets */; };
-		D0D8D1AD2C685C4D00DA534E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8D1AC2C685C4D00DA534E /* Preview Assets.xcassets */; };
-		D0D8D1B52C685DE600DA534E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1B42C685DE600DA534E /* Date+Extensions.swift */; };
-		D0D8D1B72C685E1C00DA534E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1B62C685E1C00DA534E /* View+Extensions.swift */; };
-		D0D8D1BA2C685EA200DA534E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1B92C685EA200DA534E /* CoreDataManager.swift */; };
-		D0D8D1BF2C68647A00DA534E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1BE2C68647A00DA534E /* RatingView.swift */; };
-		D0D8D1C22C68654600DA534E /* MovieListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1C12C68654600DA534E /* MovieListScreen.swift */; };
-		D0D8D1C42C6865AA00DA534E /* AddMovieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8D1C32C6865AA00DA534E /* AddMovieScreen.swift */; };
+		26AD4AE82C7EA28700B5375C /* RoomsLonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AE72C7EA28700B5375C /* RoomsLonApp.swift */; };
+		26AD4AEA2C7EA28700B5375C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AE92C7EA28700B5375C /* ContentView.swift */; };
+		26AD4AEC2C7EA28A00B5375C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AD4AEB2C7EA28A00B5375C /* Assets.xcassets */; };
+		26AD4AEF2C7EA28A00B5375C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AD4AEE2C7EA28A00B5375C /* Preview Assets.xcassets */; };
+		26AD4AF72C7EA52500B5375C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AF62C7EA52500B5375C /* CoreDataManager.swift */; };
+		26AD4AFB2C7EA58600B5375C /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AFA2C7EA58600B5375C /* Room+CoreDataClass.swift */; };
+		26AD4AFD2C7EA5BE00B5375C /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AFC2C7EA5BE00B5375C /* Room+CoreDataProperties.swift */; };
+		26AD4B002C7EA60500B5375C /* AddRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4AFF2C7EA60500B5375C /* AddRoomScreen.swift */; };
+		26AD4B022C7EA64800B5375C /* RoomListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4B012C7EA64800B5375C /* RoomListScreen.swift */; };
+		26AD4B052C7EA69E00B5375C /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4B042C7EA69E00B5375C /* UIColorTransformer.swift */; };
+		26AD4B082C7EA6F700B5375C /* AddRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4B072C7EA6F700B5375C /* AddRoomViewModel.swift */; };
+		26AD4B0A2C7EA71F00B5375C /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4B092C7EA71F00B5375C /* RoomListViewModel.swift */; };
+		26AD4B0D2C7EA78000B5375C /* RoomModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26AD4B0B2C7EA78000B5375C /* RoomModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26AD4AD92C7E9EEE00B5375C /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
-		9AB120D32C691FCD00253D78 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
-		9AB120D52C69278700253D78 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
-		D0D8D1A22C685C4900DA534E /* MovieAppLon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAppLon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0D8D1A52C685C4900DA534E /* MovieAppLonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppLonApp.swift; sourceTree = "<group>"; };
-		D0D8D1A72C685C4900DA534E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D0D8D1A92C685C4D00DA534E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0D8D1AC2C685C4D00DA534E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D0D8D1B42C685DE600DA534E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		D0D8D1B62C685E1C00DA534E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		D0D8D1B92C685EA200DA534E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		D0D8D1BE2C68647A00DA534E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		D0D8D1C12C68654600DA534E /* MovieListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListScreen.swift; sourceTree = "<group>"; };
-		D0D8D1C32C6865AA00DA534E /* AddMovieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieScreen.swift; sourceTree = "<group>"; };
+		26AD4AE42C7EA28700B5375C /* RoomsLon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomsLon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AD4AE72C7EA28700B5375C /* RoomsLonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsLonApp.swift; sourceTree = "<group>"; };
+		26AD4AE92C7EA28700B5375C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26AD4AEB2C7EA28A00B5375C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26AD4AEE2C7EA28A00B5375C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26AD4AF62C7EA52500B5375C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		26AD4AFA2C7EA58600B5375C /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26AD4AFC2C7EA5BE00B5375C /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26AD4AFF2C7EA60500B5375C /* AddRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomScreen.swift; sourceTree = "<group>"; };
+		26AD4B012C7EA64800B5375C /* RoomListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListScreen.swift; sourceTree = "<group>"; };
+		26AD4B042C7EA69E00B5375C /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
+		26AD4B072C7EA6F700B5375C /* AddRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomViewModel.swift; sourceTree = "<group>"; };
+		26AD4B092C7EA71F00B5375C /* RoomListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
+		26AD4B0C2C7EA78000B5375C /* RoomModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoomModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D0D8D19F2C685C4900DA534E /* Frameworks */ = {
+		26AD4AE12C7EA28700B5375C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,134 +50,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9AB120D22C691F9B00253D78 /* View Models */ = {
+		26AD4ADB2C7EA28700B5375C = {
 			isa = PBXGroup;
 			children = (
-				9AB120D32C691FCD00253D78 /* AddMovieViewModel.swift */,
-				9AB120D52C69278700253D78 /* MovieListViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
-		D0D8D1992C685C4900DA534E = {
-			isa = PBXGroup;
-			children = (
-				D0D8D1A42C685C4900DA534E /* MovieAppLon */,
-				D0D8D1A32C685C4900DA534E /* Products */,
+				26AD4AE62C7EA28700B5375C /* RoomsLon */,
+				26AD4AE52C7EA28700B5375C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D0D8D1A32C685C4900DA534E /* Products */ = {
+		26AD4AE52C7EA28700B5375C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1A22C685C4900DA534E /* MovieAppLon.app */,
+				26AD4AE42C7EA28700B5375C /* RoomsLon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0D8D1A42C685C4900DA534E /* MovieAppLon */ = {
+		26AD4AE62C7EA28700B5375C /* RoomsLon */ = {
 			isa = PBXGroup;
 			children = (
-				9AB120D22C691F9B00253D78 /* View Models */,
-				D0D8D1C52C68660700DA534E /* AppSystemViews */,
-				D0D8D1C02C68652700DA534E /* Screeens */,
-				D0D8D1BB2C6863C500DA534E /* Views */,
-				D0D8D1B82C685E7B00DA534E /* Managers */,
-				D0D8D1B32C685DC300DA534E /* Extensions */,
-				D0D8D1A92C685C4D00DA534E /* Assets.xcassets */,
-				D0D8D1AB2C685C4D00DA534E /* Preview Content */,
-				26AD4AD82C7E9EEE00B5375C /* MovieAppModel.xcdatamodeld */,
+				26AD4B062C7EA6D500B5375C /* View Models */,
+				26AD4B032C7EA67800B5375C /* Transformers */,
+				26AD4AFE2C7EA5EC00B5375C /* Screens */,
+				26AD4AF92C7EA56200B5375C /* Models */,
+				26AD4AF52C7EA50A00B5375C /* Managers */,
+				26AD4AE72C7EA28700B5375C /* RoomsLonApp.swift */,
+				26AD4AE92C7EA28700B5375C /* ContentView.swift */,
+				26AD4AEB2C7EA28A00B5375C /* Assets.xcassets */,
+				26AD4AED2C7EA28A00B5375C /* Preview Content */,
+				26AD4B0B2C7EA78000B5375C /* RoomModel.xcdatamodeld */,
 			);
-			path = MovieAppLon;
+			path = RoomsLon;
 			sourceTree = "<group>";
 		};
-		D0D8D1AB2C685C4D00DA534E /* Preview Content */ = {
+		26AD4AED2C7EA28A00B5375C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1AC2C685C4D00DA534E /* Preview Assets.xcassets */,
+				26AD4AEE2C7EA28A00B5375C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D0D8D1B32C685DC300DA534E /* Extensions */ = {
+		26AD4AF52C7EA50A00B5375C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1B42C685DE600DA534E /* Date+Extensions.swift */,
-				D0D8D1B62C685E1C00DA534E /* View+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D0D8D1B82C685E7B00DA534E /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				D0D8D1B92C685EA200DA534E /* CoreDataManager.swift */,
+				26AD4AF62C7EA52500B5375C /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		D0D8D1BB2C6863C500DA534E /* Views */ = {
+		26AD4AF92C7EA56200B5375C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1BE2C68647A00DA534E /* RatingView.swift */,
+				26AD4AFA2C7EA58600B5375C /* Room+CoreDataClass.swift */,
+				26AD4AFC2C7EA5BE00B5375C /* Room+CoreDataProperties.swift */,
 			);
-			path = Views;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		D0D8D1C02C68652700DA534E /* Screeens */ = {
+		26AD4AFE2C7EA5EC00B5375C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1C12C68654600DA534E /* MovieListScreen.swift */,
-				D0D8D1C32C6865AA00DA534E /* AddMovieScreen.swift */,
+				26AD4AFF2C7EA60500B5375C /* AddRoomScreen.swift */,
+				26AD4B012C7EA64800B5375C /* RoomListScreen.swift */,
 			);
-			path = Screeens;
+			path = Screens;
 			sourceTree = "<group>";
 		};
-		D0D8D1C52C68660700DA534E /* AppSystemViews */ = {
+		26AD4B032C7EA67800B5375C /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8D1A52C685C4900DA534E /* MovieAppLonApp.swift */,
-				D0D8D1A72C685C4900DA534E /* ContentView.swift */,
+				26AD4B042C7EA69E00B5375C /* UIColorTransformer.swift */,
 			);
-			path = AppSystemViews;
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		26AD4B062C7EA6D500B5375C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				26AD4B072C7EA6F700B5375C /* AddRoomViewModel.swift */,
+				26AD4B092C7EA71F00B5375C /* RoomListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0D8D1A12C685C4900DA534E /* MovieAppLon */ = {
+		26AD4AE32C7EA28700B5375C /* RoomsLon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0D8D1B02C685C4D00DA534E /* Build configuration list for PBXNativeTarget "MovieAppLon" */;
+			buildConfigurationList = 26AD4AF22C7EA28A00B5375C /* Build configuration list for PBXNativeTarget "RoomsLon" */;
 			buildPhases = (
-				D0D8D19E2C685C4900DA534E /* Sources */,
-				D0D8D19F2C685C4900DA534E /* Frameworks */,
-				D0D8D1A02C685C4900DA534E /* Resources */,
+				26AD4AE02C7EA28700B5375C /* Sources */,
+				26AD4AE12C7EA28700B5375C /* Frameworks */,
+				26AD4AE22C7EA28700B5375C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MovieAppLon;
-			productName = MovieAppLon;
-			productReference = D0D8D1A22C685C4900DA534E /* MovieAppLon.app */;
+			name = RoomsLon;
+			productName = RoomsLon;
+			productReference = 26AD4AE42C7EA28700B5375C /* RoomsLon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D0D8D19A2C685C4900DA534E /* Project object */ = {
+		26AD4ADC2C7EA28700B5375C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					D0D8D1A12C685C4900DA534E = {
+					26AD4AE32C7EA28700B5375C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = D0D8D19D2C685C4900DA534E /* Build configuration list for PBXProject "MovieAppLon" */;
+			buildConfigurationList = 26AD4ADF2C7EA28700B5375C /* Build configuration list for PBXProject "RoomsLon" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,51 +177,51 @@
 				en,
 				Base,
 			);
-			mainGroup = D0D8D1992C685C4900DA534E;
-			productRefGroup = D0D8D1A32C685C4900DA534E /* Products */;
+			mainGroup = 26AD4ADB2C7EA28700B5375C;
+			productRefGroup = 26AD4AE52C7EA28700B5375C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0D8D1A12C685C4900DA534E /* MovieAppLon */,
+				26AD4AE32C7EA28700B5375C /* RoomsLon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D0D8D1A02C685C4900DA534E /* Resources */ = {
+		26AD4AE22C7EA28700B5375C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0D8D1AD2C685C4D00DA534E /* Preview Assets.xcassets in Resources */,
-				D0D8D1AA2C685C4D00DA534E /* Assets.xcassets in Resources */,
+				26AD4AEF2C7EA28A00B5375C /* Preview Assets.xcassets in Resources */,
+				26AD4AEC2C7EA28A00B5375C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D0D8D19E2C685C4900DA534E /* Sources */ = {
+		26AD4AE02C7EA28700B5375C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB120D42C691FCD00253D78 /* AddMovieViewModel.swift in Sources */,
-				D0D8D1C42C6865AA00DA534E /* AddMovieScreen.swift in Sources */,
-				26AD4ADA2C7E9EEE00B5375C /* MovieAppModel.xcdatamodeld in Sources */,
-				D0D8D1C22C68654600DA534E /* MovieListScreen.swift in Sources */,
-				D0D8D1A82C685C4900DA534E /* ContentView.swift in Sources */,
-				D0D8D1A62C685C4900DA534E /* MovieAppLonApp.swift in Sources */,
-				D0D8D1B72C685E1C00DA534E /* View+Extensions.swift in Sources */,
-				9AB120D62C69278700253D78 /* MovieListViewModel.swift in Sources */,
-				D0D8D1BF2C68647A00DA534E /* RatingView.swift in Sources */,
-				D0D8D1BA2C685EA200DA534E /* CoreDataManager.swift in Sources */,
-				D0D8D1B52C685DE600DA534E /* Date+Extensions.swift in Sources */,
+				26AD4B082C7EA6F700B5375C /* AddRoomViewModel.swift in Sources */,
+				26AD4B002C7EA60500B5375C /* AddRoomScreen.swift in Sources */,
+				26AD4AFB2C7EA58600B5375C /* Room+CoreDataClass.swift in Sources */,
+				26AD4AF72C7EA52500B5375C /* CoreDataManager.swift in Sources */,
+				26AD4B052C7EA69E00B5375C /* UIColorTransformer.swift in Sources */,
+				26AD4AEA2C7EA28700B5375C /* ContentView.swift in Sources */,
+				26AD4AFD2C7EA5BE00B5375C /* Room+CoreDataProperties.swift in Sources */,
+				26AD4B0A2C7EA71F00B5375C /* RoomListViewModel.swift in Sources */,
+				26AD4B022C7EA64800B5375C /* RoomListScreen.swift in Sources */,
+				26AD4AE82C7EA28700B5375C /* RoomsLonApp.swift in Sources */,
+				26AD4B0D2C7EA78000B5375C /* RoomModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D0D8D1AE2C685C4D00DA534E /* Debug */ = {
+		26AD4AF02C7EA28A00B5375C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		D0D8D1AF2C685C4D00DA534E /* Release */ = {
+		26AD4AF12C7EA28A00B5375C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,18 +340,18 @@
 			};
 			name = Release;
 		};
-		D0D8D1B12C685C4D00DA534E /* Debug */ = {
+		26AD4AF32C7EA28A00B5375C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MovieAppLon/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RoomsLon/Preview Content\"";
 				DEVELOPMENT_TEAM = CVY38Y4SCX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "02 MVVM CoreData";
+				INFOPLIST_KEY_CFBundleDisplayName = "03 TransformableType";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -371,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.MovieAppLon;
+				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.RoomsLon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -379,18 +371,18 @@
 			};
 			name = Debug;
 		};
-		D0D8D1B22C685C4D00DA534E /* Release */ = {
+		26AD4AF42C7EA28A00B5375C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MovieAppLon/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RoomsLon/Preview Content\"";
 				DEVELOPMENT_TEAM = CVY38Y4SCX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "02 MVVM CoreData";
+				INFOPLIST_KEY_CFBundleDisplayName = "03 TransformableType";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -402,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.MovieAppLon;
+				PRODUCT_BUNDLE_IDENTIFIER = net.alonzochoque.RoomsLon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -413,20 +405,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0D8D19D2C685C4900DA534E /* Build configuration list for PBXProject "MovieAppLon" */ = {
+		26AD4ADF2C7EA28700B5375C /* Build configuration list for PBXProject "RoomsLon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D8D1AE2C685C4D00DA534E /* Debug */,
-				D0D8D1AF2C685C4D00DA534E /* Release */,
+				26AD4AF02C7EA28A00B5375C /* Debug */,
+				26AD4AF12C7EA28A00B5375C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0D8D1B02C685C4D00DA534E /* Build configuration list for PBXNativeTarget "MovieAppLon" */ = {
+		26AD4AF22C7EA28A00B5375C /* Build configuration list for PBXNativeTarget "RoomsLon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D8D1B12C685C4D00DA534E /* Debug */,
-				D0D8D1B22C685C4D00DA534E /* Release */,
+				26AD4AF32C7EA28A00B5375C /* Debug */,
+				26AD4AF42C7EA28A00B5375C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -434,18 +426,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		26AD4AD82C7E9EEE00B5375C /* MovieAppModel.xcdatamodeld */ = {
+		26AD4B0B2C7EA78000B5375C /* RoomModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				26AD4AD92C7E9EEE00B5375C /* MovieAppModel.xcdatamodel */,
+				26AD4B0C2C7EA78000B5375C /* RoomModel.xcdatamodel */,
 			);
-			currentVersion = 26AD4AD92C7E9EEE00B5375C /* MovieAppModel.xcdatamodel */;
-			name = MovieAppModel.xcdatamodeld;
-			path = /Users/macbookair2018/Examples/SwiftUI/swiftui_coredata_ma/02_MVVM_CoreData/MovieAppLon/MovieAppLon/MovieAppModel.xcdatamodeld;
+			currentVersion = 26AD4B0C2C7EA78000B5375C /* RoomModel.xcdatamodel */;
+			name = RoomModel.xcdatamodeld;
+			path = /Users/macbookair2018/Examples/SwiftUI/swiftui_coredata_ma/03_TransformableTypes/RoomsLon/RoomsLon/RoomModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = D0D8D19A2C685C4900DA534E /* Project object */;
+	rootObject = 26AD4ADC2C7EA28700B5375C /* Project object */;
 }
