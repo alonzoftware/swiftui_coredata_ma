@@ -15,7 +15,19 @@ class CoreDataProvider {
     var viewContext: NSManagedObjectContext {
         persistentContainer.viewContext
     }
-    
+    init(inMemory: Bool = false) {
+        persistentContainer = NSPersistentContainer(name: "TodoModel")
+        
+        if inMemory {
+            persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        }
+        
+        persistentContainer.loadPersistentStores { _, error in
+            if let error {
+                fatalError("Core Data store failed to initialize \(error)")
+            }
+        }
+    }
     static var preview: CoreDataProvider = {
         
         let provider = CoreDataProvider(inMemory: true)
@@ -36,18 +48,6 @@ class CoreDataProvider {
         return provider
     }()
     
-    init(inMemory: Bool = false) {
-        persistentContainer = NSPersistentContainer(name: "TodoModel")
-        
-        if inMemory {
-            persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
-        }
-        
-        persistentContainer.loadPersistentStores { _, error in
-            if let error {
-                fatalError("Core Data store failed to initialize \(error)")
-            }
-        }
-    }
+    
     
 }

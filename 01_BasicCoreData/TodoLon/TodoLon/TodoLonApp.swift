@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TodoLonApp: App {
+    
+    let provider = CoreDataProvider()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+            .environment(\.managedObjectContext, provider.viewContext)        }
     }
 }
