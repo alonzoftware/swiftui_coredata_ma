@@ -21,7 +21,6 @@ struct ContentView: View {
     private func saveTodoItem() {
         let todoItem = TodoItem(context: context)
         todoItem.title = title
-        todoItem.isCompleted = false
         
         do {
             try context.save()
@@ -46,34 +45,69 @@ struct ContentView: View {
         }
     }
     
+    private func deleteTodoItem(_ todoItem: TodoItem) {
+        
+        context.delete(todoItem)
+        
+        do {
+            try context.save()
+        } catch {
+            print(error)
+        }
+    }
+    
     var body: some View {
         VStack {
             TextField("Title", text: $title)
-                    .textFieldStyle(.roundedBorder)
-                    .onSubmit {
-                        if isFormValid {
-                            saveTodoItem()
-                            title = ""
-                        }
+                .textFieldStyle(.roundedBorder)
+                .onSubmit {
+                    if isFormValid {
+                        saveTodoItem()
+                        title = ""
                     }
+                }
             
             List {
                 Section("Pending") {
-                    ForEach(pendingTodoItems) { todoItem in
-                        TodoCellView(todoItem: todoItem, onChanged: updateTodoItem)
+                    
+                    if pendingTodoItems.isEmpty {
+                        if #available(iOS 17.0, *) {
+                            ContentUnavailableView("No items found.", systemImage: "doc")
+                        }
+                    } else {
+                        ForEach(pendingTodoItems) { todoItem in
+                            TodoCellView(todoItem: todoItem, onChanged: updateTodoItem)
+                        }.onDelete(perform: { indexSet in
+                            indexSet.forEach { index in
+                                let todoItem = pendingTodoItems[index]
+                                deleteTodoItem(todoItem)
+                            }
+                        })
                     }
+                    
                 }
                 
                 Section("Completed") {
-                    ForEach(completedTodoItems) { todoItem in
-                        TodoCellView(todoItem: todoItem, onChanged: updateTodoItem)
+                    if completedTodoItems.isEmpty {
+                        if #available(iOS 17.0, *) {
+                            ContentUnavailableView("No items found.", systemImage: "doc")
+                        }
+                    } else {
+                        ForEach(completedTodoItems) { todoItem in
+                            TodoCellView(todoItem: todoItem, onChanged: updateTodoItem)
+                        }.onDelete(perform: { indexSet in
+                            indexSet.forEach { index in
+                                let todoItem = completedTodoItems[index]
+                                deleteTodoItem(todoItem)
+                            }
+                        })
                     }
                 }
                 
             }.listStyle(.plain)
             
             Spacer()
-
+            
         }
         .padding()
         .navigationTitle("Todo")
@@ -107,6 +141,7 @@ struct TodoCellView: View {
     }
     
 }
+
 
 //#Preview {
 //    ContentView()
