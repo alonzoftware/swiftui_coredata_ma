@@ -15,8 +15,12 @@ struct BudgetAppLonApp: App {
         provider = CoreDataProvider()
     }
     var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//                .environment(\.managedObjectContext, provider.context)
+//        }
         WindowGroup {
-            ContentView()
+            BudgetListScreen()
                 .environment(\.managedObjectContext, provider.context)
         }
     }
