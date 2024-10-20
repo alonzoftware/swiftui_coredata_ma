@@ -20,8 +20,14 @@ struct BudgetAppLonApp: App {
 //                .environment(\.managedObjectContext, provider.context)
 //        }
         WindowGroup {
-            BudgetListScreen()
-                .environment(\.managedObjectContext, provider.context)
+            if #available(iOS 17.0, *){
+                BudgetListScreen17()
+                    .environment(\.managedObjectContext, provider.context)
+            }else{
+                BudgetListScreen()
+                    .environment(\.managedObjectContext, provider.context)
+            }
+            
         }
     }
 }

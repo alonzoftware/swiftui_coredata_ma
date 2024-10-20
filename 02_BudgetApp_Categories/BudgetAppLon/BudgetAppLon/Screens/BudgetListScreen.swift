@@ -26,20 +26,12 @@ struct BudgetListScreen: View {
                 .buttonBorderShape(.capsule)
             }
             List(budgets) { budget in
-                Text(budget.title ?? "")
-            }
+                BudgetCellView(budget: budget)            }
             Spacer()
-        }.navigationTitle("Budget App")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Add Budget") {
-                        isPresented = true
-                    }
-                }
-            }
-            .sheet(isPresented: $isPresented, content: {
-                AddBudgetScreen()
-            })
+        }
+        .sheet(isPresented: $isPresented, content: {
+            AddBudgetScreen()
+        })
     }
 }
 
