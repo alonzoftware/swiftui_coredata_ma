@@ -7,12 +7,28 @@
 
 import SwiftUI
 struct BudgetListScreen: View {
-    
+    @FetchRequest(sortDescriptors: []) private var budgets: FetchedResults<Budget>
     @State private var isPresented: Bool = false
     
     var body: some View {
         VStack {
-            Text("Budgets will be displayed here...")
+            HStack{
+                Spacer()
+                Button {
+                    isPresented = true
+                } label: {
+                    Label("Add Budget", systemImage: "plus")
+                    //.padding()
+                        .foregroundStyle(.white)
+                    //.background(.red)
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+            }
+            List(budgets) { budget in
+                Text(budget.title ?? "")
+            }
+            Spacer()
         }.navigationTitle("Budget App")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -30,5 +46,5 @@ struct BudgetListScreen: View {
 //#Preview {
 //    NavigationStack {
 //        BudgetListScreen()
-//    }
+//    }.environment(\.managedObjectContext, CoreDataProvider.preview.context)
 //}
